@@ -1,4 +1,77 @@
+/* body */
+.body {
+  font-family: 'Roboto', sans-serif;
+  background: #FFFFFF;
+}
+/* шапка styles */
+.header{
+width: 1600px;
+height: 80px;
+left: 0px;
+top: 0px;
+background: #FFFFFF;
+}
+.logo-start{ 
+width: 145px;
+height: 31px;
+left: 215px;
+top: 24px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
+color: #2196F3;
 
+margin-left: 215px;
+
+}
+.logo-end{
+  color: rgba(0, 0, 0, 1);
+
+}
+.style-nav-link{
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+color: #212121;
+padding-top: 32px;
+padding-bottom: 32px;
+margin-left: 450px;
+}
+.style-nav-link :hover,
+.style-nav-link :focus
+{
+  color: #2196F3;
+}
+/* main styles */
+.main-header {
+background: rgba(47, 48, 58, 1); 
+width: 1600px;
+height: 600px;
+left: 0px;
+top: 80px;
+}
+.text-main{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 60px;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-left: 450px;
+margin-right: 450px;
+padding-top: 200px;
+
+}
+
+/* скрыть заголовок */
 .visually-hidden {
     position: absolute;
     width: 1px;
