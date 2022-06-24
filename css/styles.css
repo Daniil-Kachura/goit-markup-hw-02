@@ -12,12 +12,7 @@ top: 0px;
 background: #FFFFFF;
 }
 .logo-start{ 
-width: 145px;
-height: 31px;
-left: 215px;
-top: 24px;
 font-family: 'Raleway';
-font-style: normal;
 font-weight: 700;
 font-size: 26px;
 line-height: 31px;
@@ -32,20 +27,20 @@ margin-left: 215px;
 
 }
 .style-nav-link{
-font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.02em;
 color: #212121;
-padding-top: 32px;
-padding-bottom: 32px;
-margin-left: 450px;
+
 }
 .style-nav-link :hover,
 .style-nav-link :focus
 {
   color: #2196F3;
+}
+.mail-link{
+  color: #757575;
 }
 /* main styles */
 .main-header {
@@ -68,6 +63,8 @@ color: #FFFFFF;
 margin-left: 450px;
 margin-right: 450px;
 padding-top: 200px;
+}
+.style-btn{
 
 }
 
