@@ -28,6 +28,8 @@
 --text-mail-footer:#ffffff99;
 /* фон для портфоліо */
 --background-portfolio:#E5E5E5;
+/* колір фону кнопок у портфоліо   */
+--button-color-style:#F5F4FA;
 }
 /* body */
 .body {
@@ -72,12 +74,13 @@ letter-spacing: 0.02em;
 color: #212121;
 text-decoration: none; 
 }
-/* наведення та табуляція для нав */
+/* наведення та табуляція для нав та кнопок у портфоліо */
 .style-nav-link :hover,
 .style-nav-link :focus
 {
   color: #2196F3;
 }
+/* колір лінків у хедері */
 .header-color-link{
   color: #212121;
   text-decoration: none; 
@@ -251,4 +254,27 @@ background: #2F303A;
 /* колір фону для партфоліо */
 .section-portfolio{
   background:  #E5E5E5;
+}
+/* колір тіней кнопки при наведені у портфоліо */
+.style-button{
+  box-shadow: 
+  0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+letter-spacing: 0.03em;
+background: #F5F4FA;
+color:  #212121;
+}
+.style-button:hover,
+.style-button:focus
+{
+color: #FFFFFF;
+background: #2196F3;
 }
