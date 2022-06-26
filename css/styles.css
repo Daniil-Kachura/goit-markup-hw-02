@@ -1,105 +1,96 @@
+*,
+*::after,
+*::before{
+box-sizing: border-box;
+}
 /* палитра кольорів */
 :root{
-  /* колір фону, колір першої чатини лого */
-  --background-color:#ffffff;
-/* текст кольорів */
-  --text-color:#212121;
-  /* колір наведення */
-  --hover-color:#2196F3;
-/* колір тіні */
-  --border-color:#ECECEC;
-  /* колір лого в хедері друга частина */
-  --textlogo-color: #000000;
-/* колір тексту майл та телефону */
- --mail-tel-color:#757575;
-/* колір фону для панелі з кнопкой */
+   /* main colors */
+--background-color:#ffffff;
+--text-color:#212121;
+--hover-color:#2196F3;
+--border-color:#ECECEC;
+--textlogo-color: #000000;
+--mail-tel-color:#757575;
 --background-header-color:#2F303A;
-/* колір текст та фону при наведенні та табуляції */
 --text-color-btn:#000000;
 --background-color-btn:#00ad23;
-/* коліт текст та фону при натисканні */
 --active-btn-text:#000000;
 --active-btn-background:#961a04;
-/* тіні для нашої команди */
 --boxshadov-clor1:#0000001f;
 --boxshadov-clor2:#00000024;
 --boxshadov-clor3:#00000033;
-/* текст почти в футері */
 --text-mail-footer:#ffffff99;
-/* фон для портфоліо */
 --background-portfolio:#E5E5E5;
-/* колір фону кнопок у портфоліо   */
 --button-color-style:#F5F4FA;
-/* тіні кнопки на головній сторінці */
 --shadov-btn:#00000026;
 }
 /* body */
-.body {
-  font-family: 'Roboto', sans-serif;
-  background: var(--background-color);
+body{
+font-family: 'Roboto','Raleway', sans-serif;
+font-size: 14px;
+letter-spacing: 0.03em;
+background-color: var(--background-color);
+color: #212121;
 }
 /* шапка styles */
 .header{
-width: 1600px;
+max-width: 1600px;
 min-height: 80px;
-background: var(--background-color);
+background-color: var(--background-color);
 border-bottom: 1px solid var(--border-color);
 }
-/* пораховано интерлиньяж (поділив вісоту на розмір тесту) */
+a{
+text-decoration: none; 
+}
+ul{
+margin: 0;
+list-style: none;
+}
+li{
+text-decoration: none; 
+}
+.style-item :visited{
+  color: #961a04;
+}
+
+/* пораховано интерлиньяж (поділив вbсоту на розмір тесту) */
 .logo-start{ 
 font-family: 'Raleway';
-font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
-letter-spacing: 0.03em;
 color: var(--hover-color);
-text-decoration: none; 
 }
 .logo-end{
-  color: var(--active-btn-text);
- text-decoration: none; 
+color: var(--active-btn-text);
 }
-.logo-footer, .adress-link{
-  color: var(--background-color);
-  font-style: normal;
-  text-decoration: none; 
-}
-.style-link{
-  list-style-type: none;
-  padding: 0;
-}
-.style-nav-link{
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: var(--text-color);
-text-decoration: none; 
+.style-list{
+padding: 0;
 }
 /* наведення та табуляція для нав та кнопок у портфоліо */
-.style-nav-link :hover,
-.style-nav-link :focus
+.style-item :hover,
+.style-item :focus
 {
-  color: var(--hover-color);
+color: var(--hover-color);
 }
 /* колір лінків у хедері */
-.header-color-link{
-  color: var(--text-color);
-  text-decoration: none; 
+.nav-link{
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
 }
 /* колір тексту для меіл та тел */
-.mail-link{
-  color: var(--mail-tel-color);
-  text-decoration: none; 
+.contact-link{
+color: var(--mail-tel-color);
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
 }
 /* main styles */
-.main-header {
-background: var(--background-header-color); 
-width: 1600px;
-height: 600px;
+.hero {
+background-color: var(--background-header-color); 
 }
-.text-main{
-font-family: 'Roboto';
+.hero-title{
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -107,21 +98,17 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--background-color);
-margin-left: 450px;
-margin-right: 450px;
-padding-top: 200px;
 }
 /* Шапка с кнопкой */
-.style-btn{
-  color: var(--background-color);
-  background:var(--hover-color);
-  box-shadow: 0px 4px 4px var(--shadov-btn);
-  border-radius: 4px;
-font-family: 'Roboto';
+.hero-btn{
+color: var(--background-color);
+background-color:var(--hover-color);
+box-shadow: 0px 4px 4px var(--shadov-btn);
+border-radius: 4px;
 font-weight: 700;
 font-size: 16px;
-line-height: 1,875;
 display: flex;
+line-height: 1,87;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
@@ -130,113 +117,79 @@ margin: 0 auto;
 border: 0;
 cursor: pointer;
 }
-.style-btn:hover,
-.style-btn:focus
+.hero-btn:hover,
+.hero-btn:focus
 {
-  color: var(--text-color-btn);
-  background: var(--background-color-btn);
+color: var(--text-color-btn);
+background: var(--background-color-btn);
 }
-.style-btn:active{
-  color: var(--text-color-btn);
-  background: var(--active-btn-background);
+.hero-btn:active{
+color: var(--text-color-btn);
+background-color: var(--active-btn-background);
 }
 /* Особенности */
+/* заголовок не наследет размери текста  */
 .peculiarities-title{
-  font-family: 'Roboto';
-font-weight: 700;
-font-size: 14px;
 line-height: 1.14;
-letter-spacing: 0.03em;
 text-transform: uppercase;
-width: 270px;
-height: 16px;
-color: var(--text-color);
+font-size: 14px;
 }
 .peculiarities-text{
-  font-family: 'Roboto';
-font-size: 14px;
 line-height: 1.71;
-letter-spacing: 0.03em;
-width: 270px;
-height: 75px;
 color: var(--mail-tel-color);
 }
 /* Чем мы занимаемся */
-.work-titel{
-width: 376px;
-height: 42px;
-font-family: 'Roboto';
-font-weight: 700;
+.section-titel{
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
-letter-spacing: 0.03em;
-color: var(--text-color);
-}
-/* Наша команда */
-.team{
-  width: 264px;
-height: 42px;
-font-family: 'Roboto';
-font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--text-color);
 }
 .team-item{
-  width: 270px;
-  background: var(--background-color);
+width: 270px;
+background-color: var(--background-color);
 /* material shadow v1 */
 box-shadow:
 0px 1px 3px var(--boxshadov-clor1),
 0px 1px 1px var(--boxshadov-clor2),
 0px 2px 1px var(--boxshadov-clor3);
 border-radius: 0px 0px 4px 4px;
-  
 }
 .name-team{
-font-family: 'Roboto';
 font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
 text-align: center;
-letter-spacing: 0.03em;
-color: var(--text-color);
-
 }
 .position-team{
-font-family: 'Roboto';
 font-size: 16px;
 line-height: 1.18;
 text-align: center;
-letter-spacing: 0.03em;
 color: var(--mail-tel-color);
 }
 /* скрыть заголовок */
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-  .footer{
-width: 1600px;
-height: 252px;
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+ }
+.footer{
 background: var(--background-header-color);
   }
-  .mail-footer{
-   color:var(--text-mail-footer); 
-   text-decoration: none; 
-  }
+.logo-footer, .adress-link{
+color: var(--background-color);
+font-style: normal;
+}
+.mail-footer{
+color:var(--text-mail-footer); 
+text-decoration: none; 
+}
 .adress-link:hover,
 .mail-footer:hover,
 .adress-link:focus,
@@ -256,12 +209,10 @@ background: var(--background-header-color);
   0px 2px 2px var(--boxshadov-clor3);
 border-radius: 4px;
 font-family: 'Roboto';
-font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.625;
 text-align: center;
-letter-spacing: 0.03em;
 background: var(--button-color-style);
 color:  var(--text-color);
 cursor: pointer;
@@ -271,4 +222,7 @@ cursor: pointer;
 {
 color:var(--background-color);
 background: var(--hover-color);
+}
+.card-list{
+
 }
